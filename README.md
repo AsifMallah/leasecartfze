@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+<!-- Project README updated for redesign tasks -->
 
-# Run and deploy your AI Studio app
+# Lease Cart
 
-This contains everything you need to run your app locally.
+## Project Overview
+This is a single‑page e‑commerce storefront built with Alpine.js, Tailwind CSS and a lightweight Express server.
 
-View your app in AI Studio: https://ai.studio/apps/3728584c-d0ea-4e5c-8f5f-e21816554159
+## Redesign Tasks
+The UI must be updated to match the Stitch design system located in `images/stitch_images/`.
 
-## Run Locally
+### Task Checklist
+- [ ] Scan project architecture and map pages to Stitch images
+- [ ] Redesign Shopping Cart UI (shopping_cart)
+- [ ] Redesign Checkout Shipping UI (checkout_shipping)
+- [ ] Redesign Product Details UI (product_details)
+- [ ] Redesign Explore Products UI (explore_products)
+- [ ] Redesign Lumina AI Assistant UI (lumina_ai_assistant)
+- [ ] Perform full UI audit and fix responsiveness, consistency, and duplication
+- [ ] Verify all JavaScript functionality remains intact
 
-**Prerequisites:**  Node.js
+## Development
+**Prerequisites:** Node.js
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Install dependencies: `npm install`
+2. Set required environment variables (e.g., `GEMINI_API_KEY` in `.env.example`).
+3. Run the app: `npm run dev`

@@ -1,4 +1,3 @@
-```javascript id="h82ksm"
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -84,4 +83,3 @@ STATUS: ACTIVE
 `);
 
 });
-```
