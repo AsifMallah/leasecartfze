@@ -62,11 +62,258 @@
 
         /* Glass Card */
         .card-premium {
-            background: rgba(23, 31, 51, 0.7);
+            background: #131b2e; /* Solid deep surface navy */
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 1.5rem;
             backdrop-filter: blur(20px);
             transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        /* High-contrast text readability styling */
+        .card-premium h3 {
+            color: #dae2fd !important; /* Premium light blue-white */
+        }
+
+        .card-premium p {
+            color: #cbd5e1 !important; /* Highly readable slate-300 */
+        }
+
+        .card-premium .text-xl {
+            color: #5de6ff !important; /* Electric cyan accent matching the gradient and theme */
+        }
+
+        /* =============================================
+           CART DRAWER — scoped to .max-w-md panel
+           ============================================= */
+
+        /* Drawer shell */
+        .fixed.inset-0.z-\[300\] .max-w-md {
+            background-color: #0c1222 !important;
+        }
+
+        /* Header: title + item-count */
+        .fixed.inset-0.z-\[300\] .max-w-md h2 {
+            color: #ffffff !important;
+        }
+        .fixed.inset-0.z-\[300\] .max-w-md .label-caps {
+            color: #8a99ad !important;
+        }
+
+        /* Close (×) button */
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-container {
+            background-color: #151e33 !important;
+            border-color: rgba(255,255,255,0.08) !important;
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-container:hover {
+            color: #ffffff !important;
+        }
+
+        /* Individual cart item cards */
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-container.rounded-2xl {
+            background-color: #151e33 !important;
+            border-color: rgba(255,255,255,0.07) !important;
+        }
+        /* Product name */
+        .fixed.inset-0.z-\[300\] .max-w-md h4 {
+            color: #ffffff !important;
+        }
+        /* Price per item */
+        .fixed.inset-0.z-\[300\] .max-w-md .text-store-accent {
+            color: #5de6ff !important;
+        }
+        /* Category label */
+        .fixed.inset-0.z-\[300\] .max-w-md p.label-caps,
+        .fixed.inset-0.z-\[300\] .max-w-md .text-store-muted {
+            color: #8a99ad !important;
+        }
+
+        /* Quantity stepper row */
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-secondary {
+            background-color: #0b101c !important;
+            border-color: rgba(255,255,255,0.10) !important;
+        }
+        /* – and + stepper buttons */
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-secondary button {
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-secondary button:hover {
+            color: #5de6ff !important;
+            background-color: rgba(93,230,255,0.08) !important;
+        }
+        /* Quantity number */
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-secondary span {
+            color: #ffffff !important;
+        }
+
+        /* Trash / remove button */
+        .fixed.inset-0.z-\[300\] .max-w-md .rounded-lg.text-store-muted {
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[300\] .max-w-md .rounded-lg.text-store-muted:hover {
+            color: #ff6b6b !important;
+            background-color: rgba(255,107,107,0.12) !important;
+        }
+
+        /* Summary footer panel */
+        .fixed.inset-0.z-\[300\] .max-w-md .rounded-t-3xl {
+            background-color: #080d18 !important;
+            border-color: rgba(255,255,255,0.07) !important;
+        }
+        /* Summary card */
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-secondary.rounded-2xl {
+            background-color: #111827 !important;
+            border-color: rgba(255,255,255,0.06) !important;
+        }
+        .fixed.inset-0.z-\[300\] .max-w-md .bg-store-secondary.rounded-2xl h3 {
+            color: #ffffff !important;
+        }
+        /* Subtotal / Shipping / Tax labels */
+        .fixed.inset-0.z-\[300\] .max-w-md .space-y-3 span.text-store-muted {
+            color: #8a99ad !important;
+        }
+        /* Subtotal / Shipping / Tax values */
+        .fixed.inset-0.z-\[300\] .max-w-md .space-y-3 span.text-store-text {
+            color: #dae2fd !important;
+        }
+        /* Total label */
+        .fixed.inset-0.z-\[300\] .max-w-md .pt-3 span.text-store-text {
+            color: #ffffff !important;
+        }
+        /* Total value — large cyan */
+        .fixed.inset-0.z-\[300\] .max-w-md .text-2xl.text-store-accent {
+            color: #5de6ff !important;
+        }
+
+        /* =============================================
+           CHECKOUT MODAL — scoped to .max-w-5xl panel
+           ============================================= */
+
+        .fixed.inset-0.z-\[400\] .max-w-5xl {
+            background-color: #0c1222 !important;
+        }
+
+        /* Left sidebar (Order Summary) */
+        .fixed.inset-0.z-\[400\] aside {
+            background-color: #080d18 !important;
+            border-color: rgba(255,255,255,0.07) !important;
+        }
+        .fixed.inset-0.z-\[400\] aside h3 {
+            color: #ffffff !important;
+        }
+        .fixed.inset-0.z-\[400\] aside .label-caps {
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[400\] aside h4 {
+            color: #ffffff !important;
+        }
+        .fixed.inset-0.z-\[400\] aside .text-\[10px\] {
+            color: #8a99ad !important;
+        }
+        /* Total Due label & value */
+        .fixed.inset-0.z-\[400\] aside .label-caps.text-store-muted {
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[400\] aside .text-3xl {
+            color: #5de6ff !important;
+        }
+
+        /* Right pane (Shipping Form) */
+        .fixed.inset-0.z-\[400\] .flex-1 h2 {
+            color: #ffffff !important;
+        }
+        .fixed.inset-0.z-\[400\] .flex-1 p {
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[400\] .flex-1 .label-caps {
+            color: #5de6ff !important;
+        }
+        /* Close button */
+        .fixed.inset-0.z-\[400\] .flex-1 button.text-store-text\/40 {
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[400\] .flex-1 button.text-store-text\/40:hover {
+            color: #ffffff !important;
+        }
+
+        /* Form inputs */
+        .fixed.inset-0.z-\[400\] .input-premium {
+            background-color: #111827 !important;
+            border-color: rgba(255,255,255,0.08) !important;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+        }
+        .fixed.inset-0.z-\[400\] .input-premium::placeholder {
+            color: #8a99ad !important;
+            -webkit-text-fill-color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[400\] .input-premium:focus {
+            border-color: #5de6ff !important;
+            box-shadow: 0 0 0 3px rgba(93,230,255,0.15) !important;
+        }
+        .fixed.inset-0.z-\[400\] .input-premium:-webkit-autofill,
+        .fixed.inset-0.z-\[400\] .input-premium:-webkit-autofill:hover,
+        .fixed.inset-0.z-\[400\] .input-premium:-webkit-autofill:focus {
+            -webkit-text-fill-color: #ffffff !important;
+            -webkit-box-shadow: 0 0 0px 1000px #111827 inset !important;
+            transition: background-color 5000s ease-in-out 0s !important;
+        }
+
+        /* Product detail modal — scoped to z-[350] panel */
+        .fixed.inset-0.z-\[350\] .bg-store-primary {
+            background-color: #0c1222 !important;
+        }
+        .fixed.inset-0.z-\[350\] h2 {
+            color: #ffffff !important;
+        }
+        .fixed.inset-0.z-\[350\] .text-store-accent {
+            color: #5de6ff !important;
+        }
+        .fixed.inset-0.z-\[350\] .text-store-muted {
+            color: #8a99ad !important;
+        }
+        .fixed.inset-0.z-\[350\] .bg-store-container {
+            background-color: #151e33 !important;
+        }
+
+        /* High contrast for the product card plus buttons */
+        .card-premium button svg {
+            stroke: #dae2fd !important;
+        }
+        .card-premium button:hover svg {
+            stroke: #5de6ff !important;
+        }
+
+        /* High contrast and consistency for all premium buttons (Add to Cart / Checkout) */
+        .btn-premium {
+            color: #0b1326 !important;
+            font-weight: 700 !important;
+        }
+        .btn-premium svg {
+            stroke: #0b1326 !important;
+        }
+
+        /* Product Card scoped high-contrast badge (Upgrades contrast to 13.9:1 on white container) */
+        .card-premium .badge-premium {
+            background-color: #0b1326 !important;
+            color: #5de6ff !important;
+            border-color: rgba(93, 230, 255, 0.25) !important;
+        }
+
+        /* Keyboard Focus Ring Accessibility Implementation (WCAG 2.4.7 Compliant) */
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible {
+            outline: 2px solid var(--color-store-accent) !important;
+            outline-offset: 4px !important;
+        }
+
+        /* Footer Social Media Icons Hover Style & Transition */
+        footer a svg {
+            transition: stroke 0.3s ease !important;
+        }
+        footer a:hover svg {
+            stroke: #5de6ff !important;
         }
 
         .card-premium:hover {
@@ -154,7 +401,9 @@
         .input-premium {
             background: rgba(6, 14, 32, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 1.1rem 1.5rem;
+            padding-top: 1.1rem;
+            padding-bottom: 1.1rem;
+            padding-right: 1.5rem;
             font-size: 0.875rem;
             color: #dae2fd;
             -webkit-text-fill-color: #dae2fd;
@@ -171,7 +420,8 @@
         }
 
         .input-premium::placeholder {
-            color: rgba(218, 226, 253, 0.3);
+            color: #8a99ad !important;
+            -webkit-text-fill-color: #8a99ad !important;
         }
 
         .input-premium:-webkit-autofill,
@@ -337,7 +587,7 @@
                     </span>
                 </a>
                 <div
-                    class="hidden lg:flex items-center gap-10 text-[11px] uppercase tracking-[0.15em] font-medium text-store-text/50">
+                    class="hidden lg:flex items-center gap-10 text-[11px] uppercase tracking-[0.15em] font-medium text-store-text/80">
                     <a href="#products" class="hover:text-store-accent transition-colors">Explore</a>
                     <a href="#features" class="hover:text-store-accent transition-colors">Features</a>
                     <a href="#support" class="hover:text-store-accent transition-colors">Support</a>
@@ -357,6 +607,7 @@
                     <template x-if="cartItemsCount > 0">
                         <span
                             class="absolute -top-2 -right-2 bg-store-accent text-store-primary w-5 h-5 flex items-center justify-center text-[10px] font-bold rounded-full"
+                            style="background-color: #5de6ff; color: #0b1326;"
                             x-text="cartItemsCount"></span>
                     </template>
                 </button>
@@ -402,7 +653,7 @@
                     </h1>
 
                     <div class="max-w-lg mb-12 space-y-6">
-                        <p class="text-base text-store-text/50 leading-relaxed">
+                        <p class="text-base text-store-text/80 leading-relaxed">
                             The premier distribution node for high-performance electronics. We specialize in premium
                             hardware allocation for the modern global professional.
                         </p>
@@ -534,9 +785,9 @@
                 <template x-for="product in filteredProducts" :key="product.id">
                     <div class="card-premium group flex flex-col overflow-hidden cursor-pointer"
                         @click="openProduct(product)">
-                        <div class="aspect-[4/3] bg-store-container-high relative overflow-hidden rounded-t-[1.5rem]">
+                        <div class="aspect-[4/3] bg-white relative overflow-hidden rounded-t-[1.5rem]">
                             <img :src="product.image" :alt="product.name"
-                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                class="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105">
                             <div class="absolute top-4 left-4"><span class="badge-premium"
                                     x-text="product.category"></span></div>
                             <button @click.stop="addToCart(product)"
@@ -586,9 +837,9 @@
             <!-- Cart Items -->
             <div class="flex-1 overflow-y-auto p-6 space-y-4">
                 <template x-if="cart.length === 0">
-                    <div class="flex flex-col items-center justify-center h-full opacity-30">
-                        <i data-lucide="shopping-bag" class="w-16 h-16 mb-6 text-store-muted"></i>
-                        <p class="label-caps">Cart Empty</p>
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <i data-lucide="shopping-bag" class="w-16 h-16 mb-6 text-store-accent/60"></i>
+                        <p class="label-caps text-store-text/80">Cart Empty</p>
                     </div>
                 </template>
                 <template x-for="item in cart" :key="item.id">
@@ -919,11 +1170,11 @@
                 <div class="w-full p-16 md:p-24 text-center space-y-10">
                     <div
                         class="w-28 h-28 bg-gradient-to-br from-[#8083ff] to-[#5de6ff] text-store-primary flex items-center justify-center rounded-full mx-auto shadow-[0_0_40px_rgba(128,131,255,0.3)]">
-                        <i data-lucide="check" class="w-14 h-14"></i>
+                        <i data-lucide="check" class="w-14 h-14 text-white"></i>
                     </div>
                     <div class="space-y-4">
-                        <h2 class="text-4xl md:text-5xl font-bold text-store-text">ORDER SUBMITTED SUCCESSFULLY</h2>
-                        <p class="text-store-muted text-sm max-w-md mx-auto leading-relaxed">
+                        <h2 class="text-4xl md:text-5xl font-bold text-white">ORDER SUBMITTED SUCCESSFULLY</h2>
+                        <p class="text-white/70 text-sm max-w-md mx-auto leading-relaxed">
                             Your order has been received. Our team will contact you shortly with confirmation and
                             tracking details.</p>
                     </div>
@@ -1025,26 +1276,12 @@
                     <div
                         class="flex items-center bg-store-container rounded-xl border border-store-border overflow-hidden focus-within:border-store-indigo/30 transition-all">
                         <input type="email" placeholder="Enter your email" x-model="newsletterEmail"
-                            class="bg-transparent text-sm flex-1 px-4 py-3 outline-none text-store-text placeholder:text-store-muted/50">
+                            class="bg-transparent text-sm flex-1 px-4 py-3 outline-none text-store-text placeholder:text-store-muted">
                         <button @click="subscribeNewsletter()"
                             class="px-4 text-store-accent hover:scale-110 transition-transform"><i data-lucide="send"
                                 class="w-4 h-4"></i></button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Newsletter Success Popup -->
-            <div x-show="newsletterSuccess" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
-                x-transition:leave="transition ease-in duration-200"
-                x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-4"
-                x-cloak
-                class="fixed top-4 md:top-6 right-4 md:right-6 z-[9999] bg-gradient-to-r from-[#8083ff] to-[#5de6ff] text-store-primary px-8 py-5 shadow-2xl flex items-center gap-4 text-[11px] font-bold uppercase tracking-widest rounded-2xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span>You have successfully subscribed to our newsletter</span>
             </div>
 
             <div class="pt-8 border-t border-store-border flex flex-col md:flex-row justify-between items-center gap-6">
@@ -1057,6 +1294,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- Newsletter Success Popup (Body Level) -->
+    <div x-show="newsletterSuccess" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-4"
+        x-cloak
+        class="fixed top-4 md:top-6 right-4 md:right-6 z-[9999] bg-gradient-to-r from-[#8083ff] to-[#5de6ff] text-store-primary px-8 py-5 shadow-2xl flex items-center gap-4 text-[11px] font-bold uppercase tracking-widest rounded-2xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+        </svg>
+        <span>You have successfully subscribed to our newsletter</span>
+    </div>
 
     <!-- Bottom Navigation (Mobile) -->
     <nav class="bottom-nav md:hidden">
@@ -1077,12 +1328,20 @@
             <span>Search</span>
         </a>
         <a href="#" @click.prevent="isCartOpen = true" class="bottom-nav-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-                <path d="M3 6h18" />
-                <path d="M16 10a4 4 0 0 1-8 0" />
-            </svg>
+            <div class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                    <path d="M3 6h18" />
+                    <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                <template x-if="cartItemsCount > 0">
+                    <span
+                        class="absolute -top-1.5 -right-1.5 bg-store-accent text-store-primary w-4 h-4 flex items-center justify-center text-[9px] font-bold rounded-full"
+                        style="background-color: #5de6ff; color: #0b1326;"
+                        x-text="cartItemsCount"></span>
+                </template>
+            </div>
             <span>Cart</span>
         </a>
         <a href="#support" class="bottom-nav-item">
@@ -1139,6 +1398,7 @@
                     if (item) { item.quantity++; } else { this.cart.push({ ...product, quantity: 1 }); }
                     this.notification = `${product.name} added to cart`;
                     setTimeout(() => this.notification = null, 3000);
+                    this.selectedProduct = null;
                     this.$nextTick(() => lucide.createIcons());
                 },
                 updateQuantity(id, delta) {
